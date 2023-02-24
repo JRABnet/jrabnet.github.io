@@ -1,0 +1,250 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+textarea {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+select {
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+button,
+.btn,
+select {
+  cursor: pointer;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+iframe {
+  border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 2em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .wrapper {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .wrapper {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+    max-width: 1140px;
+  }
+}
+
+
+
+/* title-styling */
+h3.global-title {
+  font-size: 40px;
+  line-height: 45px;
+  color: #16191e;
+  margin-bottom: 50px;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width:767px) {
+  h3.global-title {
+    font-size: 40px;
+    line-height: 45px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  h3.global-title {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width:500px) {
+  h3.global-title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+
+/* / title-styling */
+
+/* simple contact form2 */
+.form-inner-cnt h3 {
+  font-size: 40px;
+  line-height: 45px;
+  color: #333333;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+form.cnt-form {
+  margin: 0 auto;
+  max-width: 445px;
+  border: 4px solid #333;
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+
+.form-input {
+  margin-bottom: 15px;
+}
+
+.form-inner-cnt label {
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 5px;
+  color: #333333;
+  display: block;
+}
+
+.form-inner-cnt input[type="text"],
+.form-inner-cnt input[type="email"],
+.form-inner-cnt textarea {
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+  line-height: 25px;
+  padding: 12px 20px;
+  margin-bottom: 15px;
+  color: #333;
+  padding: 12px 20px;
+  font-family: inherit;
+  text-align: left;
+  -webkit-appearance: none;
+  background: rgba(255, 154, 66, 0.02);
+  display: grid;
+  grid-template-columns: .1fr 1fr;
+  align-items: center;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-inner-cnt textarea {
+  height: 125px;
+  resize: none;
+  padding: 12px 15px;
+  background: rgba(255, 154, 66, 0.02);
+  display: grid;
+  grid-template-columns: .1fr 1fr;
+  align-items: center;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.form-inner-cnt input[type="text"]:focus,
+.form-inner-cnt input[type="email"]:focus,
+.form-inner-cnt textarea:focus {
+  border: 1px solid #fd5f00;
+  background: #fff;
+}
+
+.btn {
+  text-decoration: none;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  padding: 12px 20px;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  color: #fff;
+  background: #fd5f00;
+  display: inline-block;
+  border-radius: 4px;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #ec5900;
+  transition: 0.3s ease;
+}
+
+@media all and (max-width: 590px) {
+  .form-inner-cnt h3 {
+    font-size: 30px;
+  }
+}
+
+.status-msg{
+  font-size: 16px;
+  padding: 6px;
+  border: 2px dashed;
+  background: #fff;
+  margin-bottom: 10px;
+  width: 90%;
+  text-align: center;
+}
+.status-msg.error{
+	color: #EA4335;
+}
+.status-msg.success{
+	color: #34A853;
+}
+
+.footer {
+  text-align: center;
+  padding: 3vw 0vw 2vw;
+  color: #333;
+	letter-spacing:1px;
+	line-height:25px;
+}
+.footer a {
+  color:#fd5f00;
+}
+.footer p {
+  font-size:15px;
+	letter-spacing:2px;
+}
