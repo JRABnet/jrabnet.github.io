@@ -70,13 +70,13 @@
     <div class="form-container">
   <form action="https://jrab.net/#contact" method="POST">
       <div class="col-75">
-		<input type="text" name="name" placeholder="Enter your name" value="<?php echo !empty($postData['name'])?$postData['name']:''; ?>" required="">
+		<input type="text" name="name" placeholder="Enter your name" required="">
       </div>
       <div class="col-75">
-		<input type="email" name="email" placeholder="Enter your email" value="<?php echo !empty($postData['email'])?$postData['email']:''; ?>" required="">
+		<input type="email" name="email" placeholder="Enter your email" required="">
       </div>
       <div class="col-75">
-	    <textarea name="message" placeholder="Type your message here" required="" style="height:200px"><?php echo !empty($postData['message'])?$postData['message']:''; ?></textarea>
+	    <textarea name="message" placeholder="Type your message here" required="" style="height:200px"></textarea>
       </div>
       <div class="col-75">
 	  <input type="hidden" id="lang" name="lang" value="en">
